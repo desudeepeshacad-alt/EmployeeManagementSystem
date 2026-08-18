@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: employee-management-backend
+    runtime: java
+    plan: free
+    rootDir: backend
+    buildCommand: mvn clean package -DskipTests
+    startCommand: java -jar target/*.jar
+    envVars:
+      - key: FRONTEND_URL
+        sync: false   # set this manually to your Vercel URL after the frontend is deployed
