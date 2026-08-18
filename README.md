@@ -53,7 +53,7 @@ Opens at `http://localhost:5173`. Vite's dev server proxies `/api/*` calls to th
 
 Both `pom.xml` and `application.properties` have commented-out MySQL config ready to uncomment if you want to demo against a real relational DB instead of H2.
 
-## Possible extensions (good "what would you add next" interview answer)
+## Possible extensions
 
 - Pagination/sorting on the list endpoint (`Pageable` from Spring Data)
 - Spring Security + JWT auth
